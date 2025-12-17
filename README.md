@@ -1,21 +1,28 @@
 # Medical Chatbot
 
+![Project Dashboard Demo Image](/image/dashboard_demo.png)
+
 ## Description
 
-> The **Medical Chatbot** is an intelligent conversational system built with **Retrieval-Augmented Generation (RAG)** pipeline to provide users with reliable, evidence-based medical information. It integrates a **FAISS Vector Database** with **HuggingFace Embeddings** and **Groq-hosted LLMs** to retrieve and generate responses grounded in a curated medical PDF knowledge base. This approach ensures that the chatbot delivers accurate, context-aware answers while minimizing hallucinations by relying on verified document sources.
+> The **Medical Chatbot** is an intelligent conversational system built with **Retrieval-Augmented Generation (RAG)** architecture to deliver reliable, document-grounded medical information.
+>
+> The system levverage **LangChain** as the orchestration layer, **OpenAI Large Language Models (LLMs)** for response generation, and **Chroma Vector Database** for semantic document retrieval. A curated medical PDF knolwledge base is embedded and indexed to ensure answers are grounded in verified sources.
+>
+> This project is implemented with **Streamlit**, providing an interactive web-based interface that allows users to query medical topics, view cited source documents, and adjuste retrieval and model settings dynamicallly, which help to minimise hallucinations while maintaining transperency and usability.
 
 ## Features
 
-1. **FAISS Vector Store for Fast Semantic Retrieval**  
-   Enables high-speed and accurate retrieval of relevant medical information based on semantic similarity.
-   Optimized for efficient search across large document datasets.
+1. **Retrieval-Augmented Generation (RAG) Pipeline**  
+   Combines **semantic search** and **Large Language Model based generation** to produce context-aware medical responses, which to ensure answers are grounded in retrieved medical documents rather than purely generative outputs, improves reliability and reduces hallucinations in sensitive medical domains.
 
-2. **Groq or HuggingFace Backends**  
-   Integrates with **Groq-hosted** or **HuggingFace** large language models for fast, contextually relevant responses.
+2. **Chroma Vector Store for Semantic Retrieval**  
+   Chroma is used as the vector store to persist and retrieve document embeddings efficiently, which enables fast similarity search across medical PDF documents.
 
-3. **Modular Prompt Template Injection**  
-   Supports dynamic prompt customization to adapt responses for different medical query contexts.
-   Improves flexibility and maintainability of the **Retrieval-Augmented Generation (RAG)** pipeline.
+3. **OpenAI Large Language Models (LLMs)**  
+   Integrates **OpenAI LLMs** for high-quality natural language understanding and response generation, which support configurable model selection and optimized for coherent, concise, and medically relevant explanations.
+
+4. **Source Transparency & Document Attribution**  
+   Displays **retrieved source documents** alongside chatbot responses, enables users to verify where information orginates from while enhancing trust, explainability, and auditability of the chatbot’s outputs.
 
 ## Setup Instructions
 
