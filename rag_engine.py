@@ -29,7 +29,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 class RetrievalAugmentedGenerationEngine:
     # Database Configurations
     DATASET_PATH = "./data/"
-    VECTOR_DATABASE_PATH = "./vector_database/chroma_db"
+    VECTOR_DATABASE_PATH = "./vdbs/chroma_db"
     
     def __init__(self, large_language_model_name: str = "gpt-4o-mini", embedding_model_name: str = "text-embedding-3-small", embedding_chunk_size: int = 500) -> None:
         self.docs_loaders = {"*.pdf": PyPDFLoader, "*.docx": Docx2txtLoader, "*.txt": TextLoader}
