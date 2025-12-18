@@ -1,8 +1,12 @@
-# Medical Chatbot
+## Retrieval-Augmented Medical Chatbot
 
-![Project Dashboard Demo Image](/image/dashboard_demo.png)
+![Project Dashboard Demo Image](/imgs/dashboard_demo.png)
 
-## Description
+### Description
+
+<hr />
+
+<div style="text-align: justify;">
 
 > The **Medical Chatbot** is an intelligent conversational system built with **Retrieval-Augmented Generation (RAG)** architecture to deliver reliable, document-grounded medical information.
 >
@@ -10,7 +14,13 @@
 >
 > This project is implemented with **Streamlit**, providing an interactive web-based interface that allows users to query medical topics, view cited source documents, and adjuste retrieval and model settings dynamicallly, which help to minimise hallucinations while maintaining transperency and usability.
 
-## Features
+</div>
+
+### Features
+
+<hr />
+
+<div style="text-align: justify;">
 
 1. **Retrieval-Augmented Generation (RAG) Pipeline**  
    Combines **semantic search** and **Large Language Model based generation** to produce context-aware medical responses, which to ensure answers are grounded in retrieved medical documents rather than purely generative outputs, improves reliability and reduces hallucinations in sensitive medical domains.
@@ -24,9 +34,13 @@
 4. **Source Transparency & Document Attribution**  
    Displays **retrieved source documents** alongside chatbot responses, enables users to verify where information orginates from while enhancing trust, explainability, and auditability of the chatbot’s outputs.
 
-## Setup Instructions
+</div>
 
-### Backend Setup (Python Server)
+### Setup Instructions
+
+<hr />
+
+**<span style="color: #A1AEB1;">Backend Setup (Python Server)</span>**
 
 ```bash
 # Create Virtual Environment
@@ -45,7 +59,7 @@ pip install -r requirements.txt
 exit
 ```
 
-### Usage
+**<span style="color: #A1AEB1;">Usage</span>**
 
 ```bash
 # Activate Virtual Environment for Windows
@@ -61,6 +75,14 @@ streamlit run dashboard.py
 exit
 ```
 
-## Get In Touch
+### Documentations
+
+<hr />
+
+- [**Research Summary**](docs/research_summary.md)
+
+### Get In Touch
+
+<hr />
 
 [**Email**](mailto:hangjk0612@gmail.com) | [**GitHub**](https://github.com/jhannng) | [**LinkedIn**](https://linkedin.com/in/jhannng)
