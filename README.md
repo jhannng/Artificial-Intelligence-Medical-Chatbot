@@ -75,12 +75,6 @@ streamlit run dashboard.py
 exit
 ```
 
-### Documentations
-
-<hr />
-
-- [**Research Summary**](docs/research_summary.md)
-
 ### Get In Touch
 
 <hr />
